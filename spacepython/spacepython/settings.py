@@ -76,9 +76,13 @@ WSGI_APPLICATION = 'spacepython.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "postgresapi",
+        "USER": "admin",
+        "PASSWORD": "admin1234",
+        "HOST": "database-1.cl4syay24bpo.ap-south-1.rds.amazonaws.com",
+        "PORT": "5432",
     }
 }
 
